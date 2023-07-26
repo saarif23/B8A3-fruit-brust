@@ -13,6 +13,17 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
   <!-- customs  font color -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          backgroundImage: {
+            'team-bg': "url('./images/team.png')",
+          }
+        }
+      }
+    }
+  </script>
 
 
   <style>
@@ -100,7 +111,6 @@
   <main class="max-w-6xl mx-5 lg:mx-auto my-8 font-lato">
     <!-- Deal of the day section -->
     <section class="mt-36">
-
       <!-- deal of the day info and time countdown -->
       <div class="flex flex-col lg:flex-row  lg:justify-between lg:items-center gap-5 lg:gap-0">
         <div class="text-center lg:text-left space-y-3">
@@ -377,9 +387,218 @@
 
 
       </div>
+      <div class=" flex justify-center">
+        <button class="btn btn-error text-white font-bold">Show All</button>
+      </div>
     </section>
+<!-- End deal section -->
+
+<!-- Team section -->
+<section class="my-20 bg-team-bg bg-cover bg-no-repeat bg-[#121212B3] bg-blend-overlay">
+<div>
+<div class="text-center text-white pt-12 space-y-3">
+  <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold">Meet the team</h2>
+  <p class="max-w-2xl mx-auto">Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+</div>
+<!-- team-members -->
+<div class="grid md:grid-cols-2 lg:grid-cols-4 px-12 pb-10">
+<!-- 1st member -->
+<div class="mt-5">
+  <div class="card px-0">
+    <figure class="pt-5">
+      <img src="./images/member1.png" alt="member1" class="" />
+    </figure>
+    <div class="card-body items-center text-center text-white">
+      <h2 class="card-title text-2xl font-bold ">Awlad Hossain</h2>
+      <p class="font-semibold">Fruits Expert</p>
+      <!-- social media link -->
+      <div class="flex gap-3 ">
+        <img src="./images/facebook.svg" alt="">
+        <img src="./images/twitter.svg" alt="">
+        <img src="./images/linkedin.svg" alt="">
+      </div>
+    </div>
+  </div>
+</div>
+<!-- 2nd member -->
+<div class="mt-5">
+  <div class="card">
+    <figure class="pt-5">
+      <img src="./images/member2.png" alt="member2" class="rounded-xl" />
+    </figure>
+    <div class="card-body items-center text-center text-white">
+      <h2 class="card-title text-2xl font-bold ">Safia Chowdhury</h2>
+      <p class="font-semibold">Fruits Expert</p>
+      <!-- social media link -->
+      <div class="flex gap-3 ">
+        <img src="./images/facebook.svg" alt="">
+        <img src="./images/twitter.svg" alt="">
+        <img src="./images/linkedin.svg" alt="">
+      </div>
+    </div>
+  </div>
+</div>
+<!-- 3rd member -->
+<div class="mt-5">
+  <div class="card">
+    <figure class="pt-5">
+      <img src="./images/member3.png" alt="member3" class="rounded-xl" />
+    </figure>
+    <div class="card-body items-center text-center text-white">
+      <h2 class="card-title text-2xl font-bold ">Rokib Hossain</h2>
+      <p class="font-semibold">Fruits Expert</p>
+      <!-- social media link -->
+      <div class="flex gap-3 ">
+        <img src="./images/facebook.svg" alt="">
+        <img src="./images/twitter.svg" alt="">
+        <img src="./images/linkedin.svg" alt="">
+      </div>
+    </div>
+  </div>
+</div>
+<!-- 4th member -->
+<div class="mt-5">
+  <div class="card">
+    <figure class="pt-5">
+      <img src="./images/member4.png" alt="member4" class="rounded-xl" />
+    </figure>
+    <div class="card-body items-center text-center text-white">
+      <h2 class="card-title text-2xl font-bold ">Chaity</h2>
+      <p class="font-semibold">Fruits Expert</p>
+      <!-- social media link -->
+      <div class="flex gap-3 ">
+        <img src="./images/facebook.svg" alt="">
+        <img src="./images/twitter.svg" alt="">
+        <img src="./images/linkedin.svg" alt="">
+      </div>
+    </div>
+  </div>
+</div>
+
+</div>
 
 
+
+
+
+
+
+
+
+</div>
+
+
+
+
+</section>
+<!-- End team section -->
+<!-- Why choose us -->
+<section>
+  <!-- title -->
+  <div class="text-center space-y-3">
+    <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold">Why Choose Us</h2>
+    <p class="max-w-2xl mx-auto pb-10">Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+  </div>
+<!-- why choose us flex container -->
+<div class=" relative">
+  
+    <!-- middle img part -->
+    <div class="">
+      <img class="absolute top-0 lg:top-1 w-full md:h-96 lg:h-full lg:w-[350px]  lg:left-[400px]" src="./images/whychoose1.png" alt="">
+      </div>
+      <!-- flex container -->
+      <div class="flex flex-col lg:flex-row lg:justify-between pt-96 lg:pt-0">
+       
+        <!-- left part -->
+      <div class="space-y-5">
+      
+      
+        <!-- left part-1 -->
+          <div class="flex flex-col items-center text-center lg:text-left lg:items-start lg:flex-row gap-5 ">
+            <div class="pt-2 ">
+              <img class="p-5 lg:p-3 bg-gray-200 rounded-full" src="./images/icons/group.svg" alt="">
+            </div>
+          <div class="space-y-2">
+            <h3 class="text-3xl lg:text-xl  font-bold">Dedicated Team</h3>
+            <p class="h-px w-36 lg:w-28 mx-auto lg:mx-0 bg-black "></p>
+            <p class="md:max-w-[400px] lg:max-w-xs text-lg lg:text-sm">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+          </div>
+          </div>
+        <!-- left part-2 -->
+          <div class="flex flex-col items-center text-center lg:text-left lg:items-start lg:flex-row gap-5 ">
+            <div class="pt-2 ">
+              <img class="p-5 lg:p-3 bg-gray-200 rounded-full" src="./images/icons/love.svg" alt="">
+            </div>
+          <div class="space-y-2">
+            <h3 class="text-3xl lg:text-xl  font-bold">Fresh is Best</h3>
+            <p class="h-px w-36 lg:w-28 mx-auto lg:mx-0 bg-black "></p>
+            <p class="md:max-w-[400px] lg:max-w-xs text-lg lg:text-sm">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+          </div>
+          </div>
+        <!-- left part-3 -->
+          <div class="flex flex-col items-center text-center lg:text-left lg:items-start lg:flex-row gap-5 ">
+            <div class="pt-2 ">
+              <img class="p-5 lg:p-3 bg-gray-200 rounded-full" src="./images/icons/gift-box.svg" alt="">
+            </div>
+          <div class="space-y-2">
+            <h3 class="text-3xl lg:text-xl  font-bold">Gift Certificates</h3>
+            <p class="h-px w-36 lg:w-28 mx-auto lg:mx-0 bg-black "></p>
+            <p class="md:max-w-[400px] lg:max-w-xs text-lg lg:text-sm">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+          </div>
+          </div>
+       
+          
+        </div>
+          
+        <!-- right part -->
+        <div class="space-y-5">
+         <!-- right part-1 -->
+         <div class="flex flex-col-reverse lg:flex-row gap-5 text-center items-center pt-2">
+        <div class="space-y-2 lg:text-right">
+          <h3 class="text-3xl lg:text-xl  font-bold">Integrated Supplier</h3>
+          <p class="lg:ml-52 h-px w-36 lg:w-28 mx-auto lg:mx-0  bg-black"></p>
+          <p class="md:max-w-[400px] lg:max-w-xs text-lg lg:text-sm">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+        </div>
+        <div class="pt-2">
+          <img class="p-5 lg:p-3 bg-gray-200 rounded-full" src="./images/icons/fruit.svg" alt="">
+        </div>
+        </div>
+        
+         <!-- right part-2 -->
+         <div class="flex flex-col-reverse lg:flex-row gap-5 text-center items-center pt-2">
+        <div class="space-y-2 lg:text-right">
+          <h3 class="text-3xl lg:text-xl  font-bold">Sustainable Practice</h3>
+          <p class="lg:ml-52 h-px w-36 lg:w-28 mx-auto lg:mx-0  bg-black"></p>
+          <p class="md:max-w-[400px] lg:max-w-xs text-lg lg:text-sm">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+        </div>
+        <div class="pt-2">
+          <img class="p-5 lg:p-3 bg-gray-200 rounded-full" src="./images/icons/ice-cream.svg" alt="">
+        </div>
+        </div>
+        
+         <!-- right part-3 -->
+         <div class="flex flex-col-reverse lg:flex-row gap-5 text-center items-center pt-2">
+        <div class="space-y-2 lg:text-right">
+          <h3 class="text-3xl lg:text-xl  font-bold">The Benefits Only</h3>
+          <p class="lg:ml-52 h-px w-36 lg:w-28 mx-auto lg:mx-0  bg-black"></p>
+          <p class="md:max-w-[400px] lg:max-w-xs text-lg lg:text-sm">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+        </div>
+        <div class="pt-2">
+          <img class="p-5 lg:p-3 bg-gray-200 rounded-full" src="./images/icons/like.svg" alt="">
+        </div>
+        </div>
+        
+        
+        
+        </div>
+      </div>
+      
+
+
+
+</div>
+</section>
+<!-- End choose us section -->
 
   </main>
   <footer>
